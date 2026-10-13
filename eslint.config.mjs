@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "tests/**",
+    "controllers/**",
+    "routes/**",
+    "server.js",
+    "test-runner.js",
+    "assertion-analyser.js",
   ]),
 ]);
 

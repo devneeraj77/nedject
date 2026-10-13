@@ -6,12 +6,14 @@
     "dev": "next dev -p 3000 -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "mocha ./tests/ --ui tdd"
   },
   "dependencies": {
     "@types/jsbarcode": "^3.11.4",
     "@types/qrcode": "^1.5.6",
     "bcryptjs": "^3.0.3",
+    "googleapis": "^182.0.0",
     "jsbarcode": "^3.12.3",
     "jspdf": "^4.2.1",
     "jsqr": "^1.4.0",
@@ -20,7 +22,6 @@
     "mongodb": "^7.6.0",
     "motion": "^13.4.4",
     "next": "16.3.6",
-    "googleapis": "^182.0.0",
     "next-auth": "^4.24.15",
     "qrcode": "^1.5.4",
     "react": "19.2.8",
@@ -30,11 +31,19 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/bcryptjs": "^3.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "chai": "^4.5.0",
+    "chai-http": "^4.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
+    "express": "^4.22.3",
+    "mocha": "^10.8.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
